@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rawpower 1RM Kalkulátor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="kepek/RAWPOWER ICON 2.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+    <script src="jquery-3.7.1.js"></script>
+    <script src="galleria-1.6.1/galleria-1.6.1/dist/galleria.js"></script>
+    <script src="galleria-1.6.1/galleria-1.6.1/dist/themes/classic/galleria.classic.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#images').galleria({
+                width: 500,
+                height: 500
+            });
+        });
+    </script>
+
+    <style>
+        .galleria {
+            margin: auto;
+            width: 90vw;
+            height: 90vw;
+        }
+    </style>
+</head>
+
+<body class="onerepcalc">
+
+    <h1 class="orm_cim">OneRepMax Kalkulátor</h1>
+    
+    <br>
+
+    <h2 class="orm_alcim">Mi az a OneRepMax?</h2>
+
+
+    <h4 class="magyarazat">A OneRepMax azt a maximális súlyt mutatja meg, amelyet a nagyobb ismétlésszámú sorozatok alapján képesek vagyunk
+        megmozgatni. <br> Persze ez nem lehet teljesen pontos, hiszen a maximális teljesítményünk rengeteg dologtól
+        függhet, mint például a kellő hidratáltság, energiaszint, mentális erő stb. </h4>
+
+    <br>
+    
+
+    <form id="calculatorForm">
+        <label>Nem:</label>
+        <select id="gender" name="gender" required>
+            <option value="ferfi">Férfi</option>
+            <option value="no">Nő</option>
+        </select>
+
+        <label>Kor:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label>Testsúly (kg):</label>
+        <input type="number" id="bodyweight" name="bodyweight" required>
+
+        <label>Válassza ki a gyakorlatot:</label>
+        <select id="liftType" name="liftType" required>
+            <option value="Guggolás">Guggolás</option>
+            <option value="Fekvenyomás">Fekvenyomás</option>
+            <option value="Felhúzás">Felhúzás</option>
+        </select>
+
+        <label>Megemelt súly (kg):</label>
+        <input type="number" id="weight" name="weight" required>
+
+        <label>Sikeres ismétlések száma:</label>
+        <input type="number" id="reps" name="reps" required>
+
+        <button type="button" onclick="calculateOneRepMax()">OneRepMax kiszámítása</button>
+    </form>
+
+    <div id="result"></div>
+
+    <br>
+
+    <script>
+        function calculateOneRepMax() {
+            const gender = document.getElementById('gender').value;
+            const age = document.getElementById('age').value;
+            const bodyweight = document.getElementById('bodyweight').value;
+            const liftType = document.getElementById('liftType').value;
+            const weight = document.getElementById('weight').value;
+            const reps = document.getElementById('reps').value;
+
+            const oneRepMax = weight * (36 / (37 - reps));
+
+            const result = document.getElementById('result');
+            result.innerHTML = `A várható ${liftType} One Rep Max: ${oneRepMax.toFixed(2)} kg`;
+        }
+    </script>
+
+<article id="images">
+    <img src="galeriakepek/picture1.jpg" alt="Eddie Hall 500kg-os világrekord felhúzása" title="Felhúzás">
+    <img src="galeriakepek/picture2.jpg" alt="Larry Wheels 460kg-os felhúzása" title="Felhúzás">
+    <img src="galeriakepek/picture3.jpg" alt="Jamal Brown 490kg-os Sumo felhúzás rekordja" title="Felhúzás">
+
+    <img src="galeriakepek/picture4.jpg" alt="Blaine Sumner 500kg-os Equipped guggolása" title="Guggolás">
+    <img src="galeriakepek/picture5.jpeg" alt="Russel Orhii 380kg-os súlycsoport rekordja" title="Guggolás">
+    <img src="galeriakepek/picture6.jpeg" alt="Vlad Alhazov 510 kg-os Equipped rekordja" title="Guggolás">
+
+    <img src="galeriakepek/picture7.jpg" alt="Arizona állam egyetemi fekvenyomó bajnokság" title="Fekvenyomás">
+    <img src="galeriakepek/picture8.jpg" alt="IPF Junior erőemelő versenye" title="Fekvenyomás">
+
+</article>
+
+
+<footer>
+            
+    <p>Kizárólag oktatási célból</p>
+    <p>Gimes Szabolcs - Budapesti Corvinus Egyetem</p>
+
+</footer>
+
+</body>
+
+</html>

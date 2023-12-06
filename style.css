@@ -1,0 +1,414 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+html {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: #e8491d;
+    text-align: center;
+}
+
+/*Nyereményjáték formázás*/
+
+button {
+    background-color: #e8491d;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+}
+
+
+button[type="reset"] {
+    background-color: #555;
+    margin-left: 10px;
+}
+
+.photo-album {
+    max-width: 600px; 
+    margin: 20px auto;
+}
+
+.photo-container {
+    position: relative;
+}
+
+.photo {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.nav-arrow {
+    font-size: 32px; 
+    color: #e8491d;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-arrow.left {
+    left: 0;
+}
+
+.nav-arrow.right {
+    right: 0;
+}
+
+.nyerjatek{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    
+    }
+
+
+
+.nyeremenyjatek{
+    background-color: #020202e4;
+    color: #fff;
+}
+
+.left-section {
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 48%;
+}
+
+.right-section {
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+
+        flex-basis: 48%;
+}
+
+form {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #e8491d;
+}
+
+input,
+textarea,
+select {
+    width: 120%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #e8491d;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #999;
+}
+
+article.nyjatek{
+    flex-basis: 48%;
+}
+
+/*index*/
+
+
+
+body{
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container>* {
+    height: fit-content;
+    margin: 1%;
+}
+
+header {
+    padding: 0px;
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffffff;
+    background-color: #0a0909;
+    width: 100%;
+    align-items: center;
+    height: 70%;
+}
+
+nav {
+    padding: 0;
+    flex: 1 1 100%;
+}
+ 
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+ 
+nav li {
+    padding: 15px;
+    color: #ffffff;
+}
+ 
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    text-wrap: nowrap;
+}
+ 
+nav a:hover {
+    background-color:rgb(201, 76, 76);
+    color: white;
+    transition: background-color 0.75s ease;
+}
+ 
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+img{
+    width: 75%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+footer{
+    align-items: flex-end;
+}
+
+
+#guggolaskep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#rawpowericon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    padding: 0px;
+}
+
+#indexicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul#felsonav{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+a{
+    color: #0a0909;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #000;
+    color: #e8491d;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/**SQUAT BENCH DEADLIFT**/
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.kep {
+    max-width: 50%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block; /* Center the image */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/**ONEREPMAXCALC**/
+
+.onerepcalc{
+     background-color: #1d1d1d;
+     color: #333;
+     margin: 0;
+     padding: 0;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    color: #e8491d; 
+}
+
+.orm_cim{
+    color: #e8491d;
+    text-align: center;
+}
+
+input,select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #e8491d;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+.orm_alcim{
+    text-align: center;
+    color: white;
+}
+
+.magyarazat{
+    text-align: center;
+    color: white;
+}
+
+
+/**Versenyszabályzat**/
+
+.versenyszabalyzat {
+    margin: 20px;
+    color: #333;
+    background-color: white;                /*Versenyszab body*/
+}
+
+.szabalyzatcim{
+    text-align: center;
+    color: #e8491d;
+}
+
+.szabalyok{
+    margin-bottom: 30px;
+    display: block;
+}
+
+.szabalzyatalcim{
+    color: #e8491d;
+}
+
+ol {
+    padding-left: 20px;
+    list-style-type: decimal;
+    color: #333; 
+}
+
+
+
+
+
+
+
+/**reszponzivitas**/
+
+@media only screen and (min-width: 600px) {
+    /* tablet */
+    nav ul {
+        flex-direction: row;
+    }
+    nav ul li {
+        flex-basis: 33.33%;
+        font-size: 1.15rem;
+    }
+    article{
+        flex-basis: 31%;
+    }
+
+    #ICON{
+        width: 360px;
+    }
+} 
+
+@media only screen and (min-width: 768px) {
+    /* számítógép */
+    nav {
+        flex-basis: 23%;
+        flex-direction: row;
+    }
+
+    article{
+        flex-basis: 31%;
+    }
+
+    #ICON{
+        width: 360px;
+    }
+}

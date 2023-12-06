@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+   font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container>* {
+    height: fit-content;
+margin: 1%;
+}
+
+header {
+    padding: 0px;
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffffff;
+    font-family: 'Kay Pho Du', serif;
+    background-color: #0a0909;
+    width: 100%;
+    align-items: center;
+    height: 70%;
+}
+
+nav {
+    padding: 0;
+    flex: 1 1 100%;
+}
+ 
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+ 
+nav li {
+    padding: 15px;
+    color: #ffffff;
+}
+ 
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    text-wrap: nowrap;
+}
+ 
+nav a:hover {
+    background-color:rgb(201, 76, 76);
+    color: white;
+    transition: background-color 0.75s ease;
+}
+ 
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+img{
+    width: 75%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+footer{
+    font-family: 'Kay Pho Du', serif;
+    align-items: flex-end;
+
+}
+
+
+#guggolaskep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ICON{
+    width: 250px;
+}
+
+#rawpowericon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    padding: 0px;
+}
+
+#indexicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul#felsonav{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    /* tablet */
+    nav ul {
+        flex-direction: row;
+    }
+    nav ul li {
+        flex-basis: 33.33%;
+        font-size: 1.15rem;
+    }
+    article{
+        flex-basis: 31%;
+    }
+
+    #ICON{
+        width: 360px;
+    }
+} 
+
+@media all and (min-width: 768px) {
+    /* számítógép */
+    nav {
+        flex-basis: 23%;
+        flex-direction: row;
+    }
+
+    article{
+        flex-basis: 31%;
+    }
+
+    #ICON{
+        width: 360px;
+    }
+}
