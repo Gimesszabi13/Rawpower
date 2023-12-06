@@ -20,10 +20,10 @@ position:relative is w3schoolsról lett bemásolva photo container esztétikus p
 .nav-arrow {
     font-size: 32px; 
     color: #e8491d;
-    cursor: pointer;                 chatgpt segítségét kértem, hogy generáljon a nyílnak css formázást, mert nekem nem sikerült
+    cursor: pointer;                 
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
-
+chatgpt segítségét kértem, hogy generáljon a nyílnak css formázást, mert nekem nem sikerült
